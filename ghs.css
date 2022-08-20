@@ -1,0 +1,57 @@
+*
+{
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif
+    background-color:wheat ;
+    text-align: center;
+    border: inset gray;
+    border-radius: 10%;
+   
+}
+body
+{
+    background-image: url(fondo.png);
+}
+h1
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: violet;
+}
+a
+{
+    color: black;
+    border-radius: 0%;
+    border: none;
+    background-color: violet;
+}
+img
+{
+    width: 400px;
+    height: 400px;
+}
+h2
+{
+    background-color: violet;
+}
+h3
+{
+    background-color: thistle;
+}
+p
+{
+
+    border: none;
+}
+button
+{
+    background-color: thistle;
+}
+div
+{
+    border: none;
+}
+b
+{
+    background-color: thistle;
+}

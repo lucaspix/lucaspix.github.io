@@ -1,0 +1,75 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    background-color: wheat;
+    border: inset grey;
+    border-radius: 7px;
+    
+}
+ul
+{
+    list-style-type: none;
+}
+li
+{
+    background-color: gainsboro;
+}
+body
+{
+    background-image: url(fondo.png);
+}
+div
+{
+    margin: 10px;
+}
+a
+{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+h1
+{
+    color: blueviolet; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding: 50px 50px 50px 320px; background-color: lightblue; font-size: 60px:
+}
+h2
+{
+    background-color: hotpink;
+}
+.kk
+{
+    background-color: royalblue;
+}
+h3
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img
+{
+    width: 400px;
+    height: 400px;
+}
+.bg
+{
+    padding: 50px 100px 50px 155px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.kk
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    text-align: center;
+
+}
+.c1
+{
+    background-color: cadetblue;
+}
+.c2
+{
+    background-color: indianred;
+}
+div
+{
+    text-align: center;
+}
