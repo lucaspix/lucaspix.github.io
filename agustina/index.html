@@ -3,70 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1116">
-<title>Guardia para Agustina 🩺</title>
+<meta name="theme-color" content="#120812">
+<title>Para Agustina 😏</title>
 <style>
-:root{
-  --bg:#081016;--panel:#101922;--panel2:#15212c;--text:#f5fbff;--muted:#a9bbc8;
-  --line:rgba(255,255,255,.10);--accent:#55c7d8;--accent2:#8be0ec;--ok:#65d49c;--warn:#ffcf66;--danger:#ff6d7d;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;min-height:100vh;display:grid;place-items:center;padding:18px;overflow-x:hidden;
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);
-  background:
-    radial-gradient(circle at 12% 10%,rgba(85,199,216,.14),transparent 26rem),
-    radial-gradient(circle at 86% 88%,rgba(101,212,156,.08),transparent 24rem),
-    var(--bg);
-}
-main{width:min(760px,100%)}
-.card{
-  position:relative;overflow:hidden;min-height:610px;padding:28px 22px;
-  border:1px solid var(--line);border-radius:30px;background:rgba(16,25,34,.94);
-  box-shadow:0 35px 100px rgba(0,0,0,.42);display:flex;flex-direction:column;justify-content:center;
-}
-.screen{display:none;text-align:center}.screen.active{display:block;animation:fade .34s ease}
-.kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:.85rem;color:var(--muted);margin-bottom:14px}
-h1,h2,h3,p{margin-top:0}
-h1{font-size:clamp(2.5rem,10vw,5rem);line-height:.94;letter-spacing:-.055em;margin-bottom:18px}
-h2{font-size:clamp(1.8rem,6.5vw,3.2rem);line-height:1.04;letter-spacing:-.04em;margin-bottom:14px}
-h3{font-size:1.25rem;margin-bottom:8px}
+:root{--bg:#0d0710;--panel:#17101a;--panel2:#211426;--text:#fff7fb;--muted:#cdbacb;--line:rgba(255,255,255,.11);--pink:#ff6f9f;--hot:#ff3d6e;--violet:#a86cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:16px;overflow-x:hidden;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:
+radial-gradient(circle at 12% 8%,rgba(255,61,110,.14),transparent 26rem),
+radial-gradient(circle at 88% 86%,rgba(168,108,255,.12),transparent 28rem),var(--bg)}
+main{width:min(760px,100%)}.card{position:relative;overflow:hidden;min-height:620px;padding:28px 20px;border:1px solid var(--line);border-radius:30px;background:rgba(23,16,26,.95);box-shadow:0 36px 110px rgba(0,0,0,.45);display:flex;flex-direction:column;justify-content:center}
+.screen{display:none;text-align:center}.screen.active{display:block;animation:fade .32s ease}.kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+h1,h2,p{margin-top:0}h1{font-size:clamp(2.4rem,10vw,5rem);line-height:.94;letter-spacing:-.055em;margin-bottom:18px}h2{font-size:clamp(1.8rem,7vw,3.3rem);line-height:1.03;letter-spacing:-.04em;margin-bottom:14px}
 p{max-width:580px;margin-left:auto;margin-right:auto;color:var(--muted);font-size:1.02rem;line-height:1.7}
 .buttons,.choices{display:grid;gap:10px;max-width:500px;margin:24px auto 0}
-button{
-  appearance:none;border:1px solid var(--line);border-radius:16px;min-height:50px;padding:13px 18px;
-  font:inherit;font-weight:760;cursor:pointer;transition:.18s ease;background:rgba(255,255,255,.05);color:var(--text)
-}
-button:active{transform:scale(.98)}button:focus-visible{outline:3px solid rgba(255,255,255,.35);outline-offset:3px}
-.primary{background:linear-gradient(135deg,var(--accent),#4099a7);border-color:transparent;color:#041014}
-.secondary,.choice{background:rgba(255,255,255,.05)}.choice{text-align:left}
-.note{font-size:.86rem;color:var(--muted);margin-top:14px}
-.progress{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:28px}.dot{width:7px;height:7px;border-radius:99px;background:rgba(255,255,255,.12)}.dot.on{background:var(--accent)}
-.monitor{max-width:540px;margin:20px auto 0;border:1px solid var(--line);background:#07100d;border-radius:18px;padding:18px;text-align:left}
-.monitor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.vital{padding:14px;border-radius:14px;background:rgba(255,255,255,.04)}.vital strong{display:block;font-size:1.45rem;margin-top:4px}.vital span{font-size:.78rem;color:#9fd6b7}
-.wave{height:80px;margin-top:14px;position:relative;overflow:hidden;border-radius:12px;background:
-linear-gradient(rgba(80,255,170,.05) 1px,transparent 1px),
-linear-gradient(90deg,rgba(80,255,170,.05) 1px,transparent 1px),#07100d;background-size:18px 18px}
-.wave svg{width:100%;height:100%}.wave polyline{fill:none;stroke:#62e49f;stroke-width:3;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1000;animation:dash 2.2s linear infinite}
-.calls{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:540px;margin:22px auto 0}.call{min-height:100px;font-size:1.8rem}.call.active-call{background:rgba(255,207,102,.16);border-color:rgba(255,207,102,.6);box-shadow:0 0 0 2px rgba(255,207,102,.1) inset}
-.tray{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:560px;margin:22px auto 0}.tool{min-height:78px;text-align:left}.tool.good{border-color:rgba(101,212,156,.7);background:rgba(101,212,156,.10)}.tool.bad{border-color:rgba(255,109,125,.55);background:rgba(255,109,125,.08)}
-.ecgGame{max-width:560px;margin:22px auto 0}.track{height:76px;position:relative;border-radius:16px;background:#07100d;border:1px solid var(--line);overflow:hidden}.zone{position:absolute;left:42%;width:16%;top:0;bottom:0;background:rgba(101,212,156,.18);border-left:1px solid rgba(101,212,156,.7);border-right:1px solid rgba(101,212,156,.7)}.marker{position:absolute;top:12px;bottom:12px;width:10px;border-radius:99px;background:var(--danger);left:0;box-shadow:0 0 18px rgba(255,109,125,.55)}
-.chart{max-width:560px;margin:22px auto 0;text-align:left;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035);padding:18px}.row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:none}.row span:first-child{color:var(--muted)}.row strong{text-align:right}
-.finalHeart{font-size:54px;margin-bottom:12px;animation:pulse 1.5s ease-in-out infinite}
-.stamp{display:inline-block;margin-top:18px;padding:10px 16px;border:2px solid var(--ok);color:var(--ok);border-radius:10px;font-weight:900;transform:rotate(-3deg);letter-spacing:.08em}
-.confetti{position:absolute;pointer-events:none;bottom:-30px;animation:fly 2.8s ease-out forwards;z-index:20}
-.dark-joke{margin-top:16px;font-size:.8rem;color:rgba(255,255,255,.38)}
-@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@keyframes dash{to{stroke-dashoffset:-1000}}
-@keyframes pulse{50%{transform:scale(1.1)}}
-@keyframes fly{0%{opacity:0;transform:translateY(0) rotate(0) scale(.8)}15%{opacity:1}100%{opacity:0;transform:translateY(-600px) rotate(55deg) scale(1.5)}}
-@media (hover:hover){button:hover{transform:translateY(-2px);background:rgba(255,255,255,.09)}.primary:hover{background:linear-gradient(135deg,#6bdbe9,#4cb0bf)}}
-@media (max-width:470px){
-  body{padding:10px}.card{padding:24px 15px;border-radius:24px;min-height:650px}
-  .monitor-grid,.calls{grid-template-columns:1fr}.tray{grid-template-columns:1fr 1fr}.call{min-height:74px}
-}
+button{appearance:none;border:1px solid var(--line);border-radius:16px;min-height:50px;padding:13px 18px;font:inherit;font-weight:760;cursor:pointer;transition:.18s ease;background:rgba(255,255,255,.05);color:var(--text)}
+button:active{transform:scale(.98)}button:focus-visible{outline:3px solid rgba(255,255,255,.35);outline-offset:3px}.primary{background:linear-gradient(135deg,var(--pink),var(--hot));border-color:transparent;color:white}.choice{text-align:left}.note{font-size:.86rem;color:var(--muted);margin-top:14px}
+.progress{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:28px}.dot{width:7px;height:7px;border-radius:99px;background:rgba(255,255,255,.12)}.dot.on{background:var(--pink)}
+.temp{max-width:540px;margin:22px auto 0}.thermo{height:18px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden;border:1px solid var(--line)}.heat{height:100%;width:12%;background:linear-gradient(90deg,#8d6cff,var(--pink),var(--hot));transition:width .28s ease}.heat-label{font-size:2rem;font-weight:900;margin-top:12px}
+.dare-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:560px;margin:22px auto 0}.dare{min-height:92px;text-align:left;padding:16px}.dare.sel{border-color:rgba(255,111,159,.7);background:rgba(255,111,159,.11)}
+.lockbox{max-width:560px;margin:22px auto 0;padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035)}.slider{width:100%;accent-color:var(--pink)}.bigval{font-size:2.5rem;font-weight:900;margin:12px 0}
+.hold{position:relative;overflow:hidden}.hold::before{content:"";position:absolute;inset:0 auto 0 0;width:var(--hold,0%);background:rgba(255,255,255,.17);pointer-events:none}
+.reveal-card{max-width:560px;margin:22px auto 0;padding:20px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,111,159,.08),rgba(255,255,255,.025));text-align:left;line-height:1.75}
+.bigemoji{font-size:54px;margin-bottom:12px;animation:pulse 1.4s ease-in-out infinite}.floating{position:absolute;pointer-events:none;bottom:-30px;animation:fly 2.8s ease-out forwards;z-index:20}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes pulse{50%{transform:scale(1.1)}}@keyframes fly{0%{opacity:0;transform:translateY(0) rotate(0) scale(.8)}15%{opacity:1}100%{opacity:0;transform:translateY(-600px) rotate(50deg) scale(1.5)}}
+@media (hover:hover){button:hover{transform:translateY(-2px);background:rgba(255,255,255,.09)}.primary:hover{background:linear-gradient(135deg,#ff83ad,#ff4e79)}}@media (max-width:470px){body{padding:10px}.card{padding:24px 15px;border-radius:24px;min-height:650px}.dare-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -74,146 +33,128 @@ linear-gradient(90deg,rgba(80,255,170,.05) 1px,transparent 1px),#07100d;backgrou
 <div class="card" id="app">
 
 <section class="screen active">
-  <div class="badge">🩺 Guardia especial • acceso restringido</div>
-  <div class="kicker">para la enfermera agustina</div>
-  <h1>Te asignaron un turno raro.</h1>
-  <p>No hay pacientes de verdad, nadie te va a pedir que cubras otra guardia y, milagrosamente, tampoco hay papeles para completar.</p>
-  <div class="buttons"><button class="primary next">Tomar guardia</button></div>
+  <div class="bigemoji">😏</div>
+  <div class="kicker">para agustina • modo atrevido</div>
+  <h1>Esta vez no es tan inocente.</h1>
+  <p>No pasa nada grave. Solo hay un poquito de provocación, preguntas sospechosas y demasiada confianza.</p>
+  <div class="buttons"><button class="primary next">Entrar bajo mi propia responsabilidad</button></div>
 </section>
 
 <section class="screen">
-  <div class="kicker">turno 1 de 5</div>
-  <h2>Control de signos vitales.</h2>
-  <p>El paciente se llama “Lucas”. Tocá el botón para revisar el monitor. Los valores son absolutamente serios y revisados por cero médicos.</p>
-  <div class="monitor">
-    <div class="monitor-grid">
-      <div class="vital"><span>PULSO</span><strong id="pulseVal">--</strong></div>
-      <div class="vital"><span>SAT. ROMÁNTICA</span><strong id="satVal">--</strong></div>
-      <div class="vital"><span>TEMP. EMOCIONAL</span><strong id="tempVal">--</strong></div>
-    </div>
-    <div class="wave">
-      <svg viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true">
-        <polyline points="0,44 45,44 62,44 74,20 87,64 103,37 118,44 175,44 220,44 236,44 250,18 263,66 278,36 294,44 350,44 403,44 419,44 433,22 447,62 462,37 478,44 540,44 600,44"></polyline>
-      </svg>
-    </div>
+  <div class="kicker">nivel 1</div>
+  <h2>Medidor de tensión.</h2>
+  <p>Tocá el botón varias veces. Cada toque sube un poco la temperatura del asunto.</p>
+  <div class="temp">
+    <div class="thermo"><div class="heat"></div></div>
+    <div class="heat-label"><span class="heatNum">12</span>%</div>
   </div>
-  <div class="buttons"><button class="primary vitals">Medir signos</button></div>
-  <div class="note vitals-note"></div>
+  <div class="buttons"><button class="primary heatBtn">Subir tensión 😏</button></div>
+  <div class="note heatNote">Estado: todavía civilizados.</div>
 </section>
 
 <section class="screen">
-  <div class="kicker">turno 2 de 5</div>
-  <h2>Timbres de pacientes.</h2>
-  <p>Atendé el timbre que se ilumina. Tres veces. La buena noticia: ninguno va a pedirte “una cosita” justo cuando estás por sentarte.</p>
-  <div class="calls">
-    <button class="call">🛏️<br><span style="font-size:.8rem">Habitación 1</span></button>
-    <button class="call">🛏️<br><span style="font-size:.8rem">Habitación 2</span></button>
-    <button class="call">🛏️<br><span style="font-size:.8rem">Habitación 3</span></button>
+  <div class="kicker">nivel 2</div>
+  <h2>Elegí tu versión del beso.</h2>
+  <p>No hay respuesta correcta. Aunque algunas complican bastante la noche.</p>
+  <div class="dare-grid">
+    <button class="dare">Un beso rápido.</button>
+    <button class="dare">Uno lento.</button>
+    <button class="dare">Uno en el cuello.</button>
+    <button class="dare">Uno que empieza tranquilo y después veremos.</button>
   </div>
-  <div class="note call-note">Timbres atendidos: 0/3</div>
+  <div class="note dareNote">Elegí una opción.</div>
 </section>
 
 <section class="screen">
-  <div class="kicker">turno 3 de 5</div>
-  <h2>Armá la bandeja.</h2>
-  <p>Elegí los <strong>4 elementos de enfermería</strong>. Hay objetos intrusos porque alguien dejó entrar al administrativo.</p>
-  <div class="tray">
-    <button class="tool" data-good="1">🩺 Estetoscopio</button>
-    <button class="tool" data-good="1">🧤 Guantes</button>
-    <button class="tool" data-good="0">🎮 Joystick</button>
-    <button class="tool" data-good="1">🌡️ Termómetro</button>
-    <button class="tool" data-good="0">🥔 Papa</button>
-    <button class="tool" data-good="1">🩹 Gasas / curación</button>
+  <div class="kicker">nivel 3</div>
+  <h2>¿Cuánta cercanía tolerás?</h2>
+  <p>Deslizá hasta donde te parezca razonable. El sistema posiblemente ignore tu prudencia.</p>
+  <div class="lockbox">
+    <input class="slider closeness" type="range" min="0" max="100" value="35" aria-label="Nivel de cercanía">
+    <div class="bigval"><span class="closeVal">35</span>%</div>
+    <div class="note closeText">Distancia social todavía respetable.</div>
   </div>
-  <div class="note tray-note">Correctos: 0/4</div>
+  <div class="buttons"><button class="primary closeNext">Confirmar</button></div>
 </section>
 
 <section class="screen">
-  <div class="kicker">turno 4 de 5</div>
-  <h2>Estabilizá el corazón.</h2>
-  <p>Tocá <strong>ESTABILIZAR</strong> cuando la línea roja esté dentro de la zona verde. Esto no tiene ninguna lógica clínica. Es un videojuego, por favor no denuncies al hospital.</p>
-  <div class="ecgGame">
-    <div class="track">
-      <div class="zone"></div>
-      <div class="marker"></div>
-    </div>
-    <div class="buttons"><button class="primary stabilize">ESTABILIZAR ❤️</button></div>
-    <div class="note ecg-note">Intentos exitosos: 0/2</div>
+  <div class="kicker">nivel 4</div>
+  <h2>Prueba de autocontrol.</h2>
+  <p>Mantené presionado el botón durante 2 segundos sin arrepentirte.</p>
+  <div class="buttons"><button class="primary hold">No debería apretar esto 😈</button></div>
+  <div class="note holdText">0%</div>
+</section>
+
+<section class="screen">
+  <div class="kicker">nivel 5</div>
+  <h2>Pregunta comprometida.</h2>
+  <p>Si estuviéramos solos, con la puerta cerrada y sin apuro… ¿qué elegirías primero?</p>
+  <div class="choices">
+    <button class="choice risky">Un abrazo que dure demasiado.</button>
+    <button class="choice risky">Un beso y vemos qué pasa.</button>
+    <button class="choice risky">Mirarte de cerca hasta que alguno pierda la compostura.</button>
+    <button class="choice risky">No pienso responder eso por escrito 😌</button>
   </div>
 </section>
 
 <section class="screen">
-  <div class="kicker">turno 5 de 5</div>
-  <h2>Último control.</h2>
-  <p>Antes del alta, revisá la historia clínica del paciente.</p>
-  <div class="chart">
-    <div class="row"><span>Paciente</span><strong>Lucas</strong></div>
-    <div class="row"><span>Motivo de consulta</span><strong>“No puedo dejar de pensar en Agustina”</strong></div>
-    <div class="row"><span>Evolución</span><strong>Empeora cuando la ve 😌</strong></div>
-    <div class="row"><span>Pronóstico</span><strong>Crónico</strong></div>
-    <div class="row"><span>Conducta</span><strong>Pendiente de enfermería</strong></div>
+  <div class="kicker">resultado</div>
+  <h2>Analizando tus respuestas...</h2>
+  <p>Procesando tensión, nivel de inocencia restante y cantidad de ideas que probablemente no deberían quedar registradas.</p>
+  <div class="temp">
+    <div class="thermo"><div class="heat scanHeat" style="width:0"></div></div>
+    <div class="heat-label scanNum">0%</div>
   </div>
-  <div class="buttons"><button class="primary diagnosis">Emitir diagnóstico final</button></div>
+  <div class="buttons"><button class="primary scan">Analizar</button></div>
+  <div class="note scanNote"></div>
 </section>
 
 <section class="screen">
-  <div class="finalHeart">❤️</div>
+  <div class="bigemoji">🔥</div>
   <div class="kicker">diagnóstico final</div>
-  <h1>Te amo,<br>Agustina.</h1>
-  <p>Después de una guardia completamente fraudulenta, el resultado está confirmado.</p>
-  <div class="chart">
-    <div class="row"><span>Diagnóstico</span><strong>Enamorado crónico</strong></div>
-    <div class="row"><span>Causa probable</span><strong>Agustina</strong></div>
-    <div class="row"><span>Tratamiento</span><strong>Besos, abrazos y paciencia</strong></div>
-    <div class="row"><span>Duración</span><strong>Indefinida</strong></div>
+  <h1>Agustina...</h1>
+  <p>La página confirma que entre nosotros hay una cantidad poco profesional de tensión.</p>
+  <div class="reveal-card">
+    <strong>Resultado:</strong><br><br>
+    Me gustás muchísimo.<br>
+    Me encanta estar cerca tuyo.<br>
+    Y sí, a veces también tengo pensamientos bastante menos inocentes cuando te miro. 😏<br><br>
+    <strong>Recomendación:</strong> vernos en persona y dejar que el resto se resuelva sin necesidad de otra página web.
   </div>
-  <div class="stamp">ALTA MÉDICA DENEGADA ❤️</div>
-  <p style="margin-top:22px;color:var(--text);font-weight:800">Porque todavía quiero seguir estando con vos.</p>
   <div class="buttons">
-    <button class="primary confettiBtn">Celebrar diagnóstico</button>
-    <button class="secondary next">Ver nota de enfermería</button>
+    <button class="primary hearts">Liberar pensamientos sospechosos 🔥</button>
+    <button class="choice next">Hay un último mensaje...</button>
   </div>
 </section>
 
 <section class="screen">
-  <div class="kicker">nota de enfermería</div>
-  <h2>Observación final.</h2>
-  <p>Paciente consciente, orientado y completamente perdido por una enfermera llamada Agustina.</p>
-  <p style="color:var(--text);font-weight:800;margin-top:22px">Indicación: que Agustina sepa que Lucas la ama muchísimo. ❤️</p>
+  <div class="kicker">mensaje final</div>
+  <h2>No todo era calentura.</h2>
+  <p>También quería recordarte que, además de parecerme tremendamente atractiva, sos alguien que quiero muchísimo.</p>
+  <p style="color:var(--text);font-weight:850;margin-top:20px">Te amo, Agustina. ❤️<br>Pero sí… lo otro también. 😏</p>
   <div class="buttons">
-    <button class="primary confettiBtn">❤️ Dar dosis extra de amor</button>
-    <button class="secondary restart">Repetir la guardia</button>
+    <button class="primary hearts">❤️🔥</button>
+    <button class="choice restart">Volver a empezar</button>
   </div>
-  <div class="dark-joke">Fin del turno. Sorprendentemente nadie pidió cambio de sábana a las 4:59.</div>
 </section>
 
 <div class="progress" aria-hidden="true"></div>
 </div>
 </main>
-
 <script>
-(()=>{const app=document.getElementById('app');const screens=[...app.querySelectorAll('.screen')];const progress=app.querySelector('.progress');let current=0,callHits=0,correctTools=0,ecgHits=0,markerX=0,dir=1,anim=0;
+(()=>{const app=document.getElementById('app'),screens=[...app.querySelectorAll('.screen')],progress=app.querySelector('.progress');let current=0,heat=12,holdStart=0,holdRAF=0,scanning=false;
 for(let i=0;i<screens.length;i++){const d=document.createElement('span');d.className='dot'+(i===0?' on':'');progress.appendChild(d)}const dots=[...progress.children];
-function show(n){current=Math.max(0,Math.min(n,screens.length-1));screens.forEach((s,i)=>s.classList.toggle('active',i===current));dots.forEach((d,i)=>d.classList.toggle('on',i<=current));window.scrollTo({top:0,behavior:'smooth'});if(current===2)setTimeout(lightCall,250)}
-function burst(n=30){for(let i=0;i<n;i++){const c=document.createElement('span');c.className='confetti';c.textContent=['❤️','🩺','💉','✨','💙'][Math.floor(Math.random()*5)];c.style.left=(3+Math.random()*94)+'%';c.style.fontSize=(14+Math.random()*22)+'px';c.style.animationDelay=(Math.random()*.4)+'s';app.appendChild(c);setTimeout(()=>c.remove(),3400)}}
+function show(n){current=Math.max(0,Math.min(n,screens.length-1));screens.forEach((s,i)=>s.classList.toggle('active',i===current));dots.forEach((d,i)=>d.classList.toggle('on',i<=current));window.scrollTo({top:0,behavior:'smooth'})}
+function burst(n=30){for(let i=0;i<n;i++){const h=document.createElement('span');h.className='floating';h.textContent=['❤️','🔥','😏','💋','💗'][Math.floor(Math.random()*5)];h.style.left=(3+Math.random()*94)+'%';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDelay=(Math.random()*.4)+'s';app.appendChild(h);setTimeout(()=>h.remove(),3400)}}
 app.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>show(current+1)));
-
-app.querySelector('.vitals').addEventListener('click',()=>{app.querySelector('#pulseVal').textContent='120 💘';app.querySelector('#satVal').textContent='100%';app.querySelector('#tempVal').textContent='37° + nervios';app.querySelector('.vitals-note').textContent='Hallazgo: el paciente se altera cuando escucha “Agustina”. Sospechoso.';setTimeout(()=>show(current+1),1500)});
-
-const calls=[...app.querySelectorAll('.call')];let activeCall=-1;
-function lightCall(){calls.forEach(c=>c.classList.remove('active-call'));let next;do{next=Math.floor(Math.random()*calls.length)}while(next===activeCall&&calls.length>1);activeCall=next;calls[next].classList.add('active-call')}
-calls.forEach((b,i)=>b.addEventListener('click',()=>{if(i!==activeCall)return;callHits++;app.querySelector('.call-note').textContent='Timbres atendidos: '+callHits+'/3';calls[i].classList.remove('active-call');if(callHits>=3){setTimeout(()=>show(current+1),650)}else setTimeout(lightCall,300)}));
-
-app.querySelectorAll('.tool').forEach(b=>b.addEventListener('click',()=>{if(b.disabled)return;b.disabled=true;if(b.dataset.good==='1'){b.classList.add('good');correctTools++;app.querySelector('.tray-note').textContent='Correctos: '+correctTools+'/4';if(correctTools>=4)setTimeout(()=>show(current+1),700)}else{b.classList.add('bad');app.querySelector('.tray-note').textContent='Eso no va en la bandeja. La papa queda en observación.';setTimeout(()=>{b.classList.remove('bad');b.disabled=false;app.querySelector('.tray-note').textContent='Correctos: '+correctTools+'/4'},800)}}));
-
-const marker=app.querySelector('.marker'),track=app.querySelector('.track');
-function animateMarker(){if(!document.body.contains(marker))return;markerX+=dir*1.4;if(markerX>=98){markerX=98;dir=-1}else if(markerX<=0){markerX=0;dir=1}marker.style.left='calc('+markerX+'% - 5px)';anim=requestAnimationFrame(animateMarker)}animateMarker();
-app.querySelector('.stabilize').addEventListener('click',()=>{const ok=markerX>=42&&markerX<=58;if(ok){ecgHits++;burst(6);app.querySelector('.ecg-note').textContent='Intentos exitosos: '+ecgHits+'/2';if(ecgHits>=2)setTimeout(()=>show(current+1),650)}else{app.querySelector('.ecg-note').textContent='Fuera de zona. El corazón hizo lo que quiso. Intentá otra vez.'}});
-
-app.querySelector('.diagnosis').addEventListener('click',()=>{show(current+1);burst(38)});
-app.querySelectorAll('.confettiBtn').forEach(b=>b.addEventListener('click',()=>burst(45)));
-
-app.querySelector('.restart').addEventListener('click',()=>{callHits=0;correctTools=0;ecgHits=0;activeCall=-1;app.querySelector('.call-note').textContent='Timbres atendidos: 0/3';app.querySelector('.tray-note').textContent='Correctos: 0/4';app.querySelector('.ecg-note').textContent='Intentos exitosos: 0/2';app.querySelectorAll('.tool').forEach(b=>{b.disabled=false;b.classList.remove('good','bad')});app.querySelector('#pulseVal').textContent='--';app.querySelector('#satVal').textContent='--';app.querySelector('#tempVal').textContent='--';app.querySelector('.vitals-note').textContent='';show(0)});
+const heatFill=app.querySelector('.heat'),heatNum=app.querySelector('.heatNum'),heatNote=app.querySelector('.heatNote');app.querySelector('.heatBtn').addEventListener('click',()=>{heat=Math.min(100,heat+18);heatFill.style.width=heat+'%';heatNum.textContent=heat;if(heat<50)heatNote.textContent='Estado: todavía civilizados.';else if(heat<85)heatNote.textContent='Estado: esto ya empieza a ser sospechoso.';else heatNote.textContent='Estado: bueno... inocente ya no es.';if(heat>=100)setTimeout(()=>show(current+1),700)});
+app.querySelectorAll('.dare').forEach(b=>b.addEventListener('click',()=>{app.querySelectorAll('.dare').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');app.querySelector('.dareNote').textContent='Anotado. Información potencialmente peligrosa 😏';setTimeout(()=>show(current+1),950)}));
+const slider=app.querySelector('.closeness'),closeVal=app.querySelector('.closeVal'),closeText=app.querySelector('.closeText');slider.addEventListener('input',()=>{closeVal.textContent=slider.value;const v=+slider.value;closeText.textContent=v<35?'Distancia social todavía respetable.':v<70?'Cerca. Bastante cerca.':'Esto ya no cuenta como distancia.'});app.querySelector('.closeNext').addEventListener('click',()=>{if(+slider.value<80){slider.value=88;closeVal.textContent='88';closeText.textContent='El sistema corrigió tu exceso de prudencia.';setTimeout(()=>show(current+1),1000)}else show(current+1)});
+const hold=app.querySelector('.hold'),holdText=app.querySelector('.holdText');function holdTick(t){if(!holdStart)holdStart=t;const p=Math.min(100,((t-holdStart)/2000)*100);hold.style.setProperty('--hold',p+'%');holdText.textContent=Math.floor(p)+'%';if(p>=100){holdStart=0;cancelAnimationFrame(holdRAF);burst(8);setTimeout(()=>show(current+1),350);return}holdRAF=requestAnimationFrame(holdTick)}function startHold(e){e.preventDefault();if(!holdStart)holdRAF=requestAnimationFrame(holdTick)}function stopHold(){if(holdStart){holdStart=0;cancelAnimationFrame(holdRAF);hold.style.setProperty('--hold','0%');holdText.textContent='0%'}}['pointerdown','touchstart'].forEach(ev=>hold.addEventListener(ev,startHold,{passive:false}));['pointerup','pointerleave','pointercancel','touchend'].forEach(ev=>hold.addEventListener(ev,stopHold));
+app.querySelectorAll('.risky').forEach(b=>b.addEventListener('click',()=>{b.textContent='Respuesta registrada. Qué valiente 😏';setTimeout(()=>show(current+1),800)}));
+app.querySelector('.scan').addEventListener('click',()=>{if(scanning)return;scanning=true;let v=0;const f=app.querySelector('.scanHeat'),n=app.querySelector('.scanNum'),note=app.querySelector('.scanNote');const timer=setInterval(()=>{v+=Math.floor(Math.random()*8)+5;if(v>=100){v=100;clearInterval(timer);f.style.width='100%';n.textContent='100%';note.textContent='Resultado: nivel de tensión innecesariamente alto 🔥';setTimeout(()=>show(current+1),1200)}else{f.style.width=v+'%';n.textContent=v+'%'}},100)});
+app.querySelectorAll('.hearts').forEach(b=>b.addEventListener('click',()=>burst(42)));
+app.querySelector('.restart').addEventListener('click',()=>{heat=12;heatFill.style.width='12%';heatNum.textContent='12';heatNote.textContent='Estado: todavía civilizados.';slider.value=35;closeVal.textContent='35';closeText.textContent='Distancia social todavía respetable.';scanning=false;app.querySelector('.scanHeat').style.width='0';app.querySelector('.scanNum').textContent='0%';app.querySelector('.scanNote').textContent='';show(0)});
 })();
 </script>
 </body>
